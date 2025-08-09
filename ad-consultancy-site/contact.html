@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact — AdVelocity</title>
+    <meta name="description" content="Book a strategy call or request a free ad account audit." />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body data-page="contact">
+    <div class="decor">
+      <span class="blob b1"></span>
+      <span class="blob b2"></span>
+      <span class="grid-bg"></span>
+    </div>
+
+    <header class="navbar" data-reveal>
+      <div class="container nav-inner">
+        <a class="brand" href="index.html"><span>Ad</span>Velocity</a>
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="case-studies.html">Case Studies</a>
+          <a class="active btn btn-sm btn-primary" href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero container" id="audit">
+        <h1 data-reveal>Contact & Free Audit</h1>
+        <p class="subhead" data-reveal>Fill the form and we will get back within 24 hours.</p>
+      </section>
+
+      <section class="section container">
+        <div class="grid contact-grid" data-reveal>
+          <form class="card contact-form" id="contactForm">
+            <div class="field">
+              <label for="name">Full name</label>
+              <input id="name" name="name" type="text" placeholder="Jane Doe" required />
+            </div>
+            <div class="field">
+              <label for="email">Work email</label>
+              <input id="email" name="email" type="email" placeholder="jane@brand.com" required />
+            </div>
+            <div class="field">
+              <label for="budget">Monthly ad budget</label>
+              <select id="budget" name="budget" required>
+                <option value="" disabled selected>Select one</option>
+                <option value="under-5k">Under $5k</option>
+                <option value="5-20k">$5k–$20k</option>
+                <option value="20-50k">$20k–$50k</option>
+                <option value="50k+">$50k+</option>
+              </select>
+            </div>
+            <div class="field">
+              <label>Platforms</label>
+              <div class="checks">
+                <label><input type="checkbox" name="platforms" value="Google Ads" /> Google</label>
+                <label><input type="checkbox" name="platforms" value="Meta Ads" /> Meta</label>
+                <label><input type="checkbox" name="platforms" value="TikTok Ads" /> TikTok</label>
+                <label><input type="checkbox" name="platforms" value="LinkedIn Ads" /> LinkedIn</label>
+              </div>
+            </div>
+            <div class="field">
+              <label for="message">What are your goals?</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell us about your product, goals, and timeline..." required></textarea>
+            </div>
+            <button class="btn btn-primary" type="submit">Send request</button>
+            <p class="form-note">Or email: <a id="emailCopy" href="mailto:hello@advelocity.co">hello@advelocity.co</a></p>
+            <div id="formSuccess" class="form-success" role="status" aria-live="polite" hidden>
+              Thanks! Your request is in. We'll reply shortly.
+            </div>
+          </form>
+
+          <aside class="card contact-aside">
+            <h3>FAQs</h3>
+            <details open>
+              <summary>How soon can we start?</summary>
+              <p>Audit sprint can start in 3–5 days. Retainers typically within 1–2 weeks.</p>
+            </details>
+            <details>
+              <summary>What do you need for the audit?</summary>
+              <p>Read‑only access to ad accounts, analytics, and store/CRM if available.</p>
+            </details>
+            <details>
+              <summary>What if we don't have creatives?</summary>
+              <p>We can produce UGC and ad designs. We'll share examples and templates.</p>
+            </details>
+          </aside>
+        </div>
+      </section>
+
+      <section class="cta-band" data-reveal>
+        <div class="container band-inner">
+          <h3>Prefer WhatsApp?</h3>
+          <a class="btn btn-secondary" href="#" id="waBtn">Message us</a>
+          <p class="form-note">Hint: update your WhatsApp number in <code>assets/js/main.js</code>.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container f-inner" data-reveal>
+        <div class="brand-col">
+          <a class="brand" href="index.html"><span>Ad</span>Velocity</a>
+          <p>Data‑driven paid media partner for brands that want predictable growth.</p>
+        </div>
+        <div class="nav-col">
+          <h4>Company</h4>
+          <a href="services.html">Services</a>
+          <a href="case-studies.html">Case Studies</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="nav-col">
+          <h4>Platforms</h4>
+          <a>Google Ads</a>
+          <a>Meta Ads</a>
+          <a>TikTok Ads</a>
+          <a>LinkedIn Ads</a>
+        </div>
+      </div>
+      <div class="copyright">
+        © <span id="year"></span> AdVelocity. All rights reserved.
+      </div>
+    </footer>
+
+    <script defer src="assets/js/main.js"></script>
+  </body>
+</html>
